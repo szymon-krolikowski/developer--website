@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .paragraph {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 1.8;
 }
 
 .headingOne {
-  font-size: 7.2rem;
+  font-size: 3.4rem;
   font-weight: 700;
   padding: 2rem 0rem;
 }
@@ -90,6 +90,114 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.header {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 2rem 0rem;
+}
+
+.header__firstArticle {
+  width: 100%;
+  height: 100%;
+}
+
+.header__headingOne {
   font-family: 'Mulish', sans-serif;
+}
+
+.header__paragraph {
+  color: #9C9C9C;
+}
+
+.header__span {
+  position: relative;
+}
+
+.header__span::before {
+  position: absolute;
+  content: '';
+  top: 35%;
+  height: 45%;
+  width: 100%;
+  background-color: #FDCE0C;
+  z-index: -1;
+}
+
+.header__button {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: black;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header__button:hover {
+  background-color: #FDCE0C;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.header__button:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.header__button:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.header__button::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #FDCE0C;
+  border-left: 2px solid #FDCE0C;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header__button::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  border-bottom: 2px solid #FDCE0C;
+  border-right: 2px solid #FDCE0C;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header__secoundArticle {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 2rem 0rem;
+}
+
+.header__image {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
