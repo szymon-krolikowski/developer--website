@@ -4,6 +4,7 @@
 @import "./_fonts"
 @import "./_colors"
 
+
 *,
 ::after,
 ::before
@@ -120,6 +121,9 @@ html
     height: 100%
     padding: 5rem 0rem
 
+    &__decorationPlus
+        display: none
+
     &__headingThree
         text-transform: uppercase
         text-align: center
@@ -180,15 +184,28 @@ html
         height: 80px
         border-radius: 50%
         background-color: rgba(253, 206, 12, 0.1)
+        // background-color: blue
         z-index: 1
+
+        &--web
+            top: -40%
+            left: -50%
+            animation: offerLargeCircleWeb 1.5s linear alternate infinite
+
+        &--mobile
+            top: -40%
+            left: -50%
+            animation: offerLargeCircleMobile 2.5s linear alternate infinite
 
         &--design
             top: 0%
             left: 20%
+            animation: offerLargeCircleDesign 1.5s linear alternate infinite
 
         &--code
             top: -20%
             left: 20%
+            animation: offerLargeCircleCode 1.5s linear alternate infinite
 
     &__smallCircle
         position: absolute
@@ -198,18 +215,27 @@ html
         height: 30px
         border-radius: 50%
         background-color: #f3f1f1
+        // background-color: red
         z-index: 1
 
+        &--web
+            top: 70%
+            left: 80%
+            animation: offerSmallCircleWeb 1.5s linear alternate infinite
+
         &--mobile
-            top: -50%  
+            top: -50%
+            animation: offerSmallCircleMobile 2.5s linear alternate infinite
 
         &--design
             top: -40%
             left: -30%
+            animation: offerSmallCircleDesign 1.5s linear alternate infinite
 
         &--code
             top: 80%
             left: -30% 
+            animation: offerSmallCircleCode 1.5s linear alternate infinite
 
     &__headingFour
         font-family: 'Mulish', sans-serif
@@ -217,9 +243,7 @@ html
         font-weight: 500
 
 
-.grabbing 
-  cursor: grabbing
-
 
 @import "./_medium"
 @import "./_large"
+@import "./_keyframes"

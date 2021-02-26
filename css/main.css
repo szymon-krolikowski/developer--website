@@ -301,14 +301,32 @@ html {
   z-index: 1;
 }
 
+.offer__largeCircle--web {
+  top: -40%;
+  left: -50%;
+  -webkit-animation: offerLargeCircleWeb 1.5s linear alternate infinite;
+          animation: offerLargeCircleWeb 1.5s linear alternate infinite;
+}
+
+.offer__largeCircle--mobile {
+  top: -40%;
+  left: -50%;
+  -webkit-animation: offerLargeCircleMobile 2.5s linear alternate infinite;
+          animation: offerLargeCircleMobile 2.5s linear alternate infinite;
+}
+
 .offer__largeCircle--design {
   top: 0%;
   left: 20%;
+  -webkit-animation: offerLargeCircleDesign 1.5s linear alternate infinite;
+          animation: offerLargeCircleDesign 1.5s linear alternate infinite;
 }
 
 .offer__largeCircle--code {
   top: -20%;
   left: 20%;
+  -webkit-animation: offerLargeCircleCode 1.5s linear alternate infinite;
+          animation: offerLargeCircleCode 1.5s linear alternate infinite;
 }
 
 .offer__smallCircle {
@@ -322,18 +340,31 @@ html {
   z-index: 1;
 }
 
+.offer__smallCircle--web {
+  top: 70%;
+  left: 80%;
+  -webkit-animation: offerSmallCircleWeb 1.5s linear alternate infinite;
+          animation: offerSmallCircleWeb 1.5s linear alternate infinite;
+}
+
 .offer__smallCircle--mobile {
   top: -50%;
+  -webkit-animation: offerSmallCircleMobile 2.5s linear alternate infinite;
+          animation: offerSmallCircleMobile 2.5s linear alternate infinite;
 }
 
 .offer__smallCircle--design {
   top: -40%;
   left: -30%;
+  -webkit-animation: offerSmallCircleDesign 1.5s linear alternate infinite;
+          animation: offerSmallCircleDesign 1.5s linear alternate infinite;
 }
 
 .offer__smallCircle--code {
   top: 80%;
   left: -30%;
+  -webkit-animation: offerSmallCircleCode 1.5s linear alternate infinite;
+          animation: offerSmallCircleCode 1.5s linear alternate infinite;
 }
 
 .offer__headingFour {
@@ -479,6 +510,182 @@ html {
     left: -5%;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes offerLargeCircleCode {
+  0% {
+    top: -20%;
+    left: 20%;
+  }
+  100% {
+    top: -5%;
+    left: -10%;
+  }
+}
+
+@keyframes offerLargeCircleCode {
+  0% {
+    top: -20%;
+    left: 20%;
+  }
+  100% {
+    top: -5%;
+    left: -10%;
+  }
+}
+
+@-webkit-keyframes offerSmallCircleCode {
+  0% {
+    top: 80%;
+    left: -30%;
+  }
+  100% {
+    top: 70%;
+    left: -20%;
+  }
+}
+
+@keyframes offerSmallCircleCode {
+  0% {
+    top: 80%;
+    left: -30%;
+  }
+  100% {
+    top: 70%;
+    left: -20%;
+  }
+}
+
+@-webkit-keyframes offerLargeCircleDesign {
+  0% {
+    top: 0%;
+    left: 20%;
+  }
+  100% {
+    top: 20%;
+    left: 40%;
+  }
+}
+
+@keyframes offerLargeCircleDesign {
+  0% {
+    top: 0%;
+    left: 20%;
+  }
+  100% {
+    top: 20%;
+    left: 40%;
+  }
+}
+
+@-webkit-keyframes offerSmallCircleDesign {
+  0% {
+    top: -40%;
+    left: -30%;
+  }
+  100% {
+    top: -50%;
+    left: -40%;
+  }
+}
+
+@keyframes offerSmallCircleDesign {
+  0% {
+    top: -40%;
+    left: -30%;
+  }
+  100% {
+    top: -50%;
+    left: -40%;
+  }
+}
+
+@-webkit-keyframes offerSmallCircleMobile {
+  0% {
+    top: -50%;
+    left: 80%;
+  }
+  100% {
+    top: -70%;
+    left: 60%;
+  }
+}
+
+@keyframes offerSmallCircleMobile {
+  0% {
+    top: -50%;
+    left: 80%;
+  }
+  100% {
+    top: -70%;
+    left: 60%;
+  }
+}
+
+@-webkit-keyframes offerLargeCircleMobile {
+  0% {
+    top: -40%;
+    left: -50%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+
+@keyframes offerLargeCircleMobile {
+  0% {
+    top: -40%;
+    left: -50%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes offerLargeCircleWeb {
+  0% {
+    top: -40%;
+    left: -50%;
+  }
+  100% {
+    top: -25%;
+    left: -20%;
+  }
+}
+
+@keyframes offerLargeCircleWeb {
+  0% {
+    top: -40%;
+    left: -50%;
+  }
+  100% {
+    top: -25%;
+    left: -20%;
+  }
+}
+
+@-webkit-keyframes offerSmallCircleWeb {
+  0% {
+    top: 70%;
+    left: 80%;
+  }
+  100% {
+    top: 60%;
+    left: 70%;
+  }
+}
+
+@keyframes offerSmallCircleWeb {
+  0% {
+    top: 70%;
+    left: 80%;
+  }
+  100% {
+    top: 60%;
+    left: 70%;
   }
 }
 /*# sourceMappingURL=main.css.map */
