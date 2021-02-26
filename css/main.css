@@ -210,6 +210,10 @@ html {
   padding: 5rem 0rem;
 }
 
+.offer__patternsPlus {
+  display: none;
+}
+
 .offer__decorationPlus {
   display: none;
 }
@@ -510,6 +514,12 @@ html {
     left: -5%;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+  }
+  .offer__patternsPlus {
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 107.5%;
   }
 }
 
