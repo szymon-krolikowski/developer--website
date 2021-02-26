@@ -108,5 +108,118 @@ html
         width: 100%
         z-index: 1
 
+    &__decorationOne,
+    &__decorationTwo,
+    &__decorationThree,
+    &__decorationFour,
+    &__decorationFive,
+        display: none
+
+.offer
+    width: 100vw
+    height: 100%
+    padding: 5rem 0rem
+
+    &__headingThree
+        text-transform: uppercase
+        text-align: center
+        color: $yellow
+        
+    &__span
+        padding: 0.5rem 2rem
+        border-radius: 50px
+        background-color: rgba(253, 206, 12, 0.15)
+
+    &__headingTwo
+        text-align: center
+        font-family: 'Mulish', sans-serif
+        font-weight: 500
+
+    &__firstArticle
+        margin-top: 3rem
+
+    &__slider
+        display: flex
+        padding: 0rem 2rem 5rem
+        overflow-x: auto
+        scroll-behavior: smooth
+        -webkit-overflow-scrolling: touch
+        scroll-snap-points-x: repeat(300px)
+        scroll-snap-type: mandatory
+        
+    &__slideBox
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+        flex-shrink: 0
+        text-align: center
+        color: $gray
+        min-width: 85%
+        width: 85%
+        padding: 5rem 2rem 2rem 2rem
+        border-radius: 10px
+        margin-right: 2%
+        margin-left: 2%
+        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
+        
+    &__iconBox
+        position: relative
+        margin: 1rem 0rem
+
+    &__icon
+        position: relative
+        z-index: 100
+
+    &__largeCircle
+        position: absolute
+        top: -40%
+        left: -50%
+        width: 80px
+        height: 80px
+        border-radius: 50%
+        background-color: rgba(253, 206, 12, 0.1)
+        z-index: 1
+
+        &--design
+            top: 0%
+            left: 20%
+
+        &--code
+            top: -20%
+            left: 20%
+
+    &__smallCircle
+        position: absolute
+        top: 70%
+        left: 80%
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        background-color: #f3f1f1
+        z-index: 1
+
+        &--mobile
+            top: -50%  
+
+        &--design
+            top: -40%
+            left: -30%
+
+        &--code
+            top: 80%
+            left: -30% 
+
+    &__headingFour
+        font-family: 'Mulish', sans-serif
+        color: black
+        font-weight: 500
+
+
+.grabbing 
+  cursor: grabbing
+
+
 @import "./_medium"
 @import "./_large"
