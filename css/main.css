@@ -394,6 +394,13 @@ html {
   background-color: #f8f8f8;
 }
 
+.information__secoundArticle--secound {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  position: relative;
+}
+
 .information__firstArticle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,6 +409,13 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+
+.information__firstArticle--secound {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 .information__headingBox, .information__quoteBox {
@@ -423,6 +437,21 @@ html {
   margin-bottom: 5rem;
 }
 
+.information__paragraphBox--secound {
+  margin-bottom: 2rem;
+}
+
+.information__button {
+  background-color: #FDCE0C;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: white;
+  border: none;
+  padding: 1.5rem 3.5rem;
+  border-radius: 50px;
+}
+
 .information__headingTwo {
   font-family: 'Mulish', sans-serif;
   font-weight: 600;
@@ -432,8 +461,14 @@ html {
   color: #9C9C9C;
 }
 
-.information__paragrapGrayColor--paddingLeft {
+.information__unorderList {
   padding-left: 2rem;
+  margin-top: 2rem;
+  color: #FDCE0C;
+}
+
+.information__unorderListParagraph {
+  color: black;
 }
 
 .information__linkBorder {
@@ -484,6 +519,14 @@ html {
   position: relative;
   right: 10%;
   z-index: 1;
+}
+
+.information__patternDecoration {
+  display: none;
+}
+
+.information__aDecoration {
+  display: none;
 }
 
 @media screen and (min-width: 767px) {
@@ -541,9 +584,19 @@ html {
   .information__firstArticle {
     width: 60%;
   }
+  .information__firstArticle--secound {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .information__secoundArticle {
     width: 40%;
     padding: 5rem 2rem;
+  }
+  .information__secoundArticle--secound {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
   .information__imagePhoneOne {
     width: 160px;
@@ -689,6 +742,11 @@ html {
     width: 60%;
     padding: 5rem 2rem;
   }
+  .information__secoundArticle--secound {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .information__imagePhoneOne {
     width: 260px;
     height: 520px;
@@ -708,6 +766,33 @@ html {
   }
   .information__paragrapGrayColor--marginLeft {
     margin-left: 10%;
+  }
+  .information__paragrapGrayColor {
+    color: #9C9C9C;
+  }
+  .information__paragrapGrayColor--paddingLeft {
+    padding-left: 2rem;
+  }
+  .information__paragrapGrayColor--paddingLeftSecound {
+    padding-left: 6rem;
+  }
+  .information__unorderList {
+    padding-left: 7.5rem;
+  }
+  .information__button {
+    margin-left: 5.5rem;
+  }
+  .information__patternDecoration {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -40.5%;
+  }
+  .information__aDecoration {
+    display: block;
+    position: absolute;
+    top: 160%;
+    left: 220%;
   }
 }
 
