@@ -29,18 +29,25 @@ html
     padding: 5rem 2rem 0rem
 
     &__wrapper
-        background-color: #F8F8F8
+        background-color: $background
 
     &__firstArticle
         width: 100%
         height: 100%
 
+    &__secoundArticle
+        width: 100%
+        height: 100%
+        padding: 5rem 2rem 0rem
+
+    &__image
+        position: relative
+        width: 100%
+        z-index: 1
+
     &__headingOne
         font-family: 'Mulish', sans-serif
         z-index: 100
-
-    &__paragraph
-        color: $gray
 
     &__span
         position: relative
@@ -53,6 +60,9 @@ html
         width: 100%
         background-color: $yellow
         z-index: -1
+
+    &__paragraph
+        color: $gray
 
     &__button
         position: relative
@@ -78,8 +88,8 @@ html
             height: 100%
 
         &::after
-            position: absolute
             content: ''
+            position: absolute
             top: 0
             left: 0
             width: 15px
@@ -89,8 +99,8 @@ html
             transition: 0.5s
 
         &::before
-            position: absolute
             content: ''
+            position: absolute
             bottom: 0
             right: 0
             width: 15px
@@ -98,16 +108,6 @@ html
             border-bottom: 2px solid $yellow
             border-right: 2px solid $yellow
             transition: 0.5s
-
-    &__secoundArticle
-        width: 100%
-        height: 100%
-        padding: 5rem 2rem 0rem
-
-    &__image
-        position: relative
-        width: 100%
-        z-index: 1
 
     &__decorationOne,
     &__decorationTwo,
@@ -121,27 +121,6 @@ html
     height: 100%
     padding: 5rem 0rem
 
-    &__patternsPlus
-        display: none
-
-    &__decorationPlus
-        display: none
-
-    &__headingThree
-        text-transform: uppercase
-        text-align: center
-        color: $yellow
-        
-    &__span
-        padding: 0.5rem 2rem
-        border-radius: 50px
-        background-color: rgba(253, 206, 12, 0.15)
-
-    &__headingTwo
-        text-align: center
-        font-family: 'Mulish', sans-serif
-        font-weight: 500
-
     &__firstArticle
         margin-top: 3rem
 
@@ -150,11 +129,13 @@ html
         padding: 0rem 2rem 5rem
         overflow-x: auto
         scroll-behavior: smooth
-        -webkit-overflow-scrolling: touch
-        scroll-snap-points-x: repeat(300px)
         scroll-snap-type: mandatory
-        
+        scroll-snap-points-x: repeat(300px)
+        -webkit-overflow-scrolling: touch
+
     &__slideBox
+        width: 85%
+        min-width: 85%
         display: flex
         flex-direction: column
         justify-content: center
@@ -163,14 +144,12 @@ html
         flex-shrink: 0
         text-align: center
         color: $gray
-        min-width: 85%
-        width: 85%
-        padding: 5rem 2rem 2rem 2rem
         border-radius: 10px
+        padding: 5rem 2rem 2rem 2rem
         margin-right: 2%
         margin-left: 2%
         box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
-        
+
     &__iconBox
         position: relative
         margin: 1rem 0rem
@@ -178,6 +157,32 @@ html
     &__icon
         position: relative
         z-index: 100
+
+    &__headingTwo
+        text-align: center
+        font-weight: 500
+        font-family: 'Mulish', sans-serif
+   
+    &__headingThree
+        text-align: center
+        text-transform: uppercase
+        color: $yellow
+
+    &__headingFour
+        font-weight: 500
+        font-family: 'Mulish', sans-serif
+        color: black
+  
+    &__span
+        padding: 0.5rem 2rem
+        border-radius: 50px
+        background-color: rgba(253, 206, 12, 0.15)
+
+    &__patternsPlus
+        display: none
+
+    &__decorationPlus
+        display: none
 
     &__largeCircle
         position: absolute
@@ -187,7 +192,6 @@ html
         height: 80px
         border-radius: 50%
         background-color: rgba(253, 206, 12, 0.1)
-        // background-color: blue
         z-index: 1
 
         &--web
@@ -218,7 +222,6 @@ html
         height: 30px
         border-radius: 50%
         background-color: #f3f1f1
-        // background-color: red
         z-index: 1
 
         &--web
@@ -240,11 +243,6 @@ html
             left: -30% 
             animation: offerSmallCircleCode 1.5s linear alternate infinite
 
-    &__headingFour
-        font-family: 'Mulish', sans-serif
-        color: black
-        font-weight: 500
-
 .information
     width: 100vw
     height: 100%
@@ -253,27 +251,36 @@ html
     padding: 5rem 2rem
 
     &__wrapper
-        background-color: rgb(248, 248, 248)
-
-    &__secoundArticle--secound
-        order: 1
-        position: relative
+        background-color: $background
 
     &__firstArticle
+        position: relative
         display: flex
         flex-direction: column
-        position: relative
 
         &--secound
             order: 0
 
+    &__secoundArticle
+        position: relative  
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        align-content: center
+        padding: 8rem 2rem 5rem
+
+        &--secound
+            position: relative
+            order: 1
+
     &__headingBox,
     &__quoteBox
+        position: relative
         display: flex
         justify-content: center
         align-content: center
         align-items: center
-        position: relative
 
     &__paragraphBox
         margin-bottom: 5rem
@@ -281,15 +288,19 @@ html
         &--secound
             margin-bottom: 2rem
 
-    &__button
-        background-color: $yellow
-        margin-top: 2rem
-        font-weight: bold
-        font-size: 1.6rem
-        color: white
-        border: none
-        padding: 1.5rem 3.5rem
-        border-radius: 50px
+    &__imagePhoneOne
+        width: 260px
+        height: 420px
+        position: relative
+        left: 10%
+        z-index: 2
+
+    &__imagePhoneTwo
+        width: 220px
+        height: 380px
+        position: relative
+        right: 10%
+        z-index: 1
 
     &__headingTwo
         font-family: 'Mulish', sans-serif
@@ -298,10 +309,20 @@ html
     &__paragrapGrayColor
         color: $gray
 
+    &__button
+        font-size: 1.6rem
+        font-weight: bold
+        color: white
+        border: none
+        border-radius: 50px
+        background-color: $yellow
+        margin-top: 2rem
+        padding: 1.5rem 3.5rem
+
     &__unorderList
+        color: $yellow
         padding-left: 2rem
         margin-top: 2rem
-        color: $yellow
 
     &__unorderListParagraph
         color: black
@@ -318,29 +339,6 @@ html
             top: 117.5%
             left: 0
 
-    &__secoundArticle
-        padding: 8rem 2rem 5rem
-        display: flex
-        flex-direction: row
-        justify-content: center
-        align-items: center
-        align-content: center
-        position: relative    
-
-    &__imagePhoneOne
-        width: 260px
-        height: 420px
-        position: relative
-        left: 10%
-        z-index: 2
-
-    &__imagePhoneTwo
-        width: 220px
-        height: 380px
-        position: relative
-        right: 10%
-        z-index: 1
-
     &__patternDecoration
         display: none
 
@@ -353,56 +351,99 @@ html
     height: 100%
     padding: 5rem 0rem
 
-    &__headingThree
-        text-transform: uppercase
-        text-align: center
-        color: $yellow
-
     &__firstArticle
         padding: 0rem 2rem
-        
-    &__span
-        padding: 0.5rem 2rem
-        border-radius: 50px
-        background-color: rgba(253, 206, 12, 0.15)
+
+    &__secoundArticle
+        margin-top: 5rem
+
+    &__slider
+        display: flex
+        overflow-x: auto
+        scroll-behavior: smooth
+        scroll-snap-points-x: repeat(300px)
+        scroll-snap-type: mandatory
+        padding: 0rem 0rem 5rem
+        -webkit-overflow-scrolling: touch
+
+    &__box
+        width: 90vw
+        min-width: 90vw
+        border-radius: 10px
+        border-top: 10px solid $yellow
+        padding: 3rem 2rem
+        margin: 0rem 2rem
+        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
+
+        &--black
+            border-top: 10px solid black
+
+    &__boxBody
+        margin-top: 3rem
+
+    &__boxHeader
+        position: relative
 
     &__headingTwo
         text-align: center
-        font-family: 'Mulish', sans-serif
         font-weight: 500
+        font-family: 'Mulish', sans-serif
+
+    &__headingThree
+        color: $yellow
+        text-transform: uppercase
+        text-align: center
 
     &__paragraph
         color: $gray
         text-align: center
 
     &__paragraphYellow
-        font-family: 'Mulish', sans-serif
-        text-align: center
         color: $yellow
-        font-weight: bold
         font-size: 1.8rem
+        font-weight: bold
+        text-align: center
+        font-family: 'Mulish', sans-serif
 
     &__paragraphPrice
         text-align: center
 
+    &__paragraphComment
+        font-size: 1.7rem
+        text-align: center
+        color: $gray
+        margin-top: 2rem
+
+    &__span
+        border-radius: 50px
+        background-color: rgba(253, 206, 12, 0.15)
+        padding: 0.5rem 2rem
+
     &__spanPrice
         font-size: 4.5rem
 
+    &__button
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        font-size: 1.4rem
+        font-weight: bold
+        color: $gray
+        border: 1px solid $gray
+        border-radius: 50px
+        background: none
+        padding: 1rem 2rem
+        margin-top: 2rem
+
     &__unorderList
-        padding-left: 7rem
         color: $yellow
+        padding-left: 7rem
 
     &__unorderListParagraph
         color: black
 
     &__unorderListElementGray
         color: $gray
-
-    &__boxHeader
-        position: relative
-
-    &__boxBody
-        margin-top: 3rem
 
     &__linkBorder
         position: absolute
@@ -411,40 +452,6 @@ html
         width: 100%
         height: 1px
         background: radial-gradient(circle, $yellow 0%, rgba(214, 223, 235, 0) 100%)
-
-    &__button
-        color: $gray
-        border: 1px solid $gray
-        background: none
-        padding: 1rem 2rem
-        font-size: 1.4rem
-        font-weight: bold
-        border-radius: 50px
-        margin-top: 2rem
-        position: relative
-        left: 50%
-        transform: translateX(-50%)
-
-    &__secoundArticle
-        margin-top: 5rem
-
-    &__slider
-        display: flex
-        padding: 0rem 0rem 5rem
-        overflow-x: auto
-        scroll-behavior: smooth
-        -webkit-overflow-scrolling: touch
-        scroll-snap-points-x: repeat(300px)
-        scroll-snap-type: mandatory
-
-    &__box
-        min-width: 90vw
-        width: 90vw
-        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
-        padding: 3rem 2rem
-        border-top: 10px solid $yellow
-        border-radius: 10px
-        margin: 0rem 2rem
         
 @import "./_medium"
 @import "./_large"
