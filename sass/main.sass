@@ -248,7 +248,11 @@ html
     height: 100%
     display: flex
     flex-direction: column
-    padding: 5rem 2rem
+    padding: 5rem 2rem 0rem
+
+    &--secound
+        padding: 0rem 2rem 5rem
+
 
     &__wrapper
         background-color: $background
@@ -274,6 +278,9 @@ html
             position: relative
             order: 1
 
+    &__iconQuoteBox
+        margin-right: 2rem
+
     &__headingBox,
     &__quoteBox
         position: relative
@@ -289,22 +296,37 @@ html
             margin-bottom: 2rem
 
     &__imagePhoneOne
-        width: 260px
-        height: 420px
+        max-width: 50vw
+        height: 50vh
         position: relative
         left: 10%
+        cursor: pointer
         z-index: 2
 
     &__imagePhoneTwo
-        width: 220px
-        height: 380px
+        max-width: 50vw
+        height: 40vh
         position: relative
         right: 10%
+        cursor: pointer
         z-index: 1
+
+    &__active
+        max-width: 50vw
+        height: 50vh
+        z-index: 100
+        transition: 0.5s
+
+    &__passive
+        max-width: 50vw
+        height: 40vh
+        z-index: 10
+        transition: 0.5s
 
     &__headingTwo
         font-family: 'Mulish', sans-serif
         font-weight: 600
+        padding-left: 2rem
 
     &__paragrapGrayColor
         color: $gray
@@ -318,6 +340,10 @@ html
         background-color: $yellow
         margin-top: 2rem
         padding: 1.5rem 3.5rem
+        transition: 0.5s
+
+        &:hover
+            background-color: black
 
     &__unorderList
         color: $yellow
@@ -344,8 +370,7 @@ html
 
     &__aDecoration
         display: none
-
-    
+ 
 .pricing
     max-width: 1300px
     width: 100vw
@@ -357,6 +382,43 @@ html
 
     &__secoundArticle
         margin-top: 5rem
+        position: relative
+
+    &__arrowRight
+        position: absolute
+        top: 50%
+        left: 85%
+        font-size: 2rem
+        background-color: white
+        border-radius: 50%
+        width: 40px
+        height: 40px
+        text-align: center
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
+
+    &__arrowLeft
+        position: absolute
+        top: 50%
+        left: 5%
+        font-size: 2rem
+        background-color: white
+        border-radius: 50%
+        width: 40px
+        height: 40px
+        text-align: center
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
+
+    &__SVG
+        width: 20px
+        height: 20px
 
     &__slider
         display: flex
@@ -367,7 +429,7 @@ html
         border-radius: 10px
         border-top: 10px solid $yellow
         padding: 3rem 2rem
-        margin: 0rem 4rem
+        margin: 0rem 10vw
         box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
 
         &--black
@@ -558,6 +620,10 @@ html
 .about
     padding: 10rem 2rem 5rem
 
+    &__firstArticle
+        text-align: center
+        margin-bottom: 5rem
+
     &__secoundArticle
         margin-top: 2rem
 
@@ -580,7 +646,6 @@ html
     &__headingTwo
         font-weight: 500
         font-family: 'Mulish', sans-serif
-        width: 80%
 
     &__headingThree
         color: $yellow
