@@ -880,6 +880,41 @@ html {
   color: #FDCE0C;
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 2rem;
+}
+
+.contact__secoundArticle {
+  width: 100%;
+}
+
+.contact__map {
+  width: 100%;
+}
+
+.contact__office {
+  margin: 2rem 0rem;
+}
+
+.contact__headingTwo {
+  font-family: 'Mulish', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.contact__icon {
+  font-size: 2.2rem;
+  color: #FDCE0C;
+  padding-right: 3rem;
+}
+
 @media screen and (min-width: 767px) {
   .header {
     -webkit-box-orient: horizontal;
@@ -979,26 +1014,38 @@ html {
     width: 80%;
     margin: 0 auto 2rem;
   }
-  .about {
-    padding: 10rem 2rem 5rem;
-    width: 80%;
+  .contact {
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 0 auto;
   }
-  .about__headingTwo {
-    width: 100%;
+  .contact__firstArticle {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .about__paragraphTitle::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 17%;
-    left: -17%;
-    border-radius: 50%;
-    background-color: #FDCE0C;
-    z-index: 1;
-    -webkit-box-shadow: 0px 0px 20px 0px #FDCE0C;
-            box-shadow: 0px 0px 20px 0px #FDCE0C;
+  .contact__secoundArticle {
+    width: 50%;
+  }
+  .contact__paragraph {
+    width: 80%;
+  }
+  .contact__headingTwo {
+    font-size: 4rem;
   }
 }
 
@@ -1149,6 +1196,9 @@ html {
     right: 0%;
     z-index: 1;
   }
+  .information__headingTwo {
+    padding-left: 2rem;
+  }
   .information__paragrapGrayColor {
     width: 80%;
   }
@@ -1293,8 +1343,14 @@ html {
     position: absolute;
     top: -80%;
     left: -15%;
-    height: 305%;
+    height: 220%;
     z-index: -1;
+  }
+  .statistic__paragraph {
+    font-size: 6rem;
+  }
+  .contact__headingTwo {
+    font-size: 6rem;
   }
 }
 
