@@ -80,8 +80,28 @@
 
     .question
         margin: 0 auto
-        max-width: 1300px
+        max-width: 1200px
         
         &__item 
             width: 80%
             margin: 0 auto 2rem
+
+    .about
+        padding: 10rem 2rem 5rem
+        width: 80%
+        margin: 0 auto
+
+        &__headingTwo
+            width: 100%
+
+        &__paragraphTitle::before
+            content: ''
+            position: absolute
+            width: 20px
+            height: 20px
+            top: 17%
+            left: -17%
+            border-radius: 50%
+            background-color: $yellow
+            z-index: 1
+            box-shadow: 0px 0px 20px 0px #FDCE0C
