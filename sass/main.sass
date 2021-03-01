@@ -471,6 +471,90 @@ html
 
     &__patternsDecoration
         display: none
+
+.question
+    position: relative
+    padding: 10rem 2rem 5rem
+
+    &__wrapper
+        position: relative
+        background-color: $background
+
+    &__accordion 
+        width: 100%
+  
+    &__item 
+        width: 100%
+        border: 1px solid rgba(156, 156, 156, 0.3)
+        border-radius: 10px
+        padding: 2rem 4rem
+        margin-bottom: 2rem
+        transition: 1s
+
+        &:hover
+            background-color: white
+            box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
+            
+    &__itemHeader 
+        position: relative
+        display: flex
+        align-items: center
+        cursor: pointer
+
+    &__itemHeader::after 
+        content: "\002B"
+        position: absolute
+        right: 1rem
+        width: 28px
+        height: 28px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        align-content: center
+        font-size: 2rem
+        border-radius: 50%
+        background-color: $yellow
+
+    &__itemBody 
+        max-height: 0
+        overflow: hidden
+        transition: max-height 0.5s ease-out
+
+    &__itemBodyContent 
+        margin-top: 2rem
+
+    &__headingTwo
+        text-align: center
+        font-weight: 500
+        font-family: 'Mulish', sans-serif
+
+    &__headingThree
+        color: $yellow
+        text-transform: uppercase
+        text-align: center
+
+    &__paragraphHeader
+        width: 80%
+
+    &__paragraphPrice
+        text-align: center
+        font-size: 2.2rem
+
+    &__span
+        border-radius: 50px
+        background-color: rgba(253, 206, 12, 0.15)
+        padding: 0.5rem 2rem
+
+    &__qDecoration
+        display: none
+
+    &__plusDecoration
+        display: none
+
+.question__itemHeader.active::after 
+    content: "\2212"
+
         
 @import "./_medium"
 @import "./_large"
