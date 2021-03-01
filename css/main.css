@@ -1105,24 +1105,32 @@ html {
     top: 20%;
     left: 100%;
     display: block;
+    -webkit-animation: headerPlusDecorationMove 10s linear alternate infinite;
+            animation: headerPlusDecorationMove 10s linear alternate infinite;
   }
   .header__decorationThree {
     position: absolute;
     top: 10%;
     left: -10%;
     display: block;
+    -webkit-animation: headerBDecorationMove 5s linear alternate infinite;
+            animation: headerBDecorationMove 5s linear alternate infinite;
   }
   .header__decorationFour {
     position: absolute;
     top: 70%;
     left: -21%;
     display: block;
+    -webkit-animation: headerSDecorationMove 5s linear alternate infinite;
+            animation: headerSDecorationMove 5s linear alternate infinite;
   }
   .header__decorationFive {
     position: absolute;
     top: 70%;
     left: 108%;
     display: block;
+    -webkit-animation: headerDDecorationMove 5s linear alternate infinite;
+            animation: headerDDecorationMove 5s linear alternate infinite;
   }
   .offer {
     position: relative;
@@ -1231,6 +1239,8 @@ html {
     position: absolute;
     top: 160%;
     left: 220%;
+    -webkit-animation: headerADecorationMove 5s linear alternate infinite;
+            animation: headerADecorationMove 5s linear alternate infinite;
   }
   .pricing {
     margin: 0 auto;
@@ -1303,6 +1313,8 @@ html {
     top: 15%;
     left: -15%;
     display: block;
+    -webkit-animation: headerQDecorationMove 5s linear alternate infinite;
+            animation: headerQDecorationMove 5s linear alternate infinite;
   }
   .question__plusDecoration {
     position: absolute;
@@ -1527,6 +1539,570 @@ html {
   100% {
     top: 60%;
     left: 70%;
+  }
+}
+
+@-webkit-keyframes headerPlusDecorationMove {
+  0% {
+    top: 20%;
+    left: 100%;
+  }
+  10% {
+    top: 21%;
+    left: 101%;
+  }
+  20% {
+    top: 20%;
+    left: 100%;
+  }
+  30% {
+    top: 21%;
+    left: 101%;
+  }
+  40% {
+    top: 20%;
+    left: 100%;
+  }
+  50% {
+    top: 21%;
+    left: 101%;
+  }
+  60% {
+    top: 20%;
+    left: 100%;
+  }
+  70% {
+    top: 21%;
+    top-left: 101%;
+  }
+  80% {
+    top: 20%;
+    left: 100%;
+  }
+  90% {
+    top: 21%;
+    left: 101%;
+  }
+  100% {
+    top: 20%;
+    left: 100%;
+  }
+}
+
+@keyframes headerPlusDecorationMove {
+  0% {
+    top: 20%;
+    left: 100%;
+  }
+  10% {
+    top: 21%;
+    left: 101%;
+  }
+  20% {
+    top: 20%;
+    left: 100%;
+  }
+  30% {
+    top: 21%;
+    left: 101%;
+  }
+  40% {
+    top: 20%;
+    left: 100%;
+  }
+  50% {
+    top: 21%;
+    left: 101%;
+  }
+  60% {
+    top: 20%;
+    left: 100%;
+  }
+  70% {
+    top: 21%;
+    top-left: 101%;
+  }
+  80% {
+    top: 20%;
+    left: 100%;
+  }
+  90% {
+    top: 21%;
+    left: 101%;
+  }
+  100% {
+    top: 20%;
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes headerBDecorationMove {
+  0% {
+    top: 10%;
+    left: -10%;
+  }
+  10% {
+    top: 11%;
+    left: -10%;
+  }
+  20% {
+    top: 12%;
+    left: -10%;
+  }
+  30% {
+    top: 13%;
+    left: -10%;
+  }
+  40% {
+    top: 14%;
+    left: -10%;
+  }
+  50% {
+    top: 15%;
+    left: -10%;
+  }
+  60% {
+    top: 14%;
+    left: -10%;
+  }
+  70% {
+    top: 13%;
+    left: -10%;
+  }
+  80% {
+    top: 12%;
+    left: -10%;
+  }
+  90% {
+    top: 11%;
+    left: -10%;
+  }
+  100% {
+    top: 10%;
+    left: -10%;
+  }
+}
+
+@keyframes headerBDecorationMove {
+  0% {
+    top: 10%;
+    left: -10%;
+  }
+  10% {
+    top: 11%;
+    left: -10%;
+  }
+  20% {
+    top: 12%;
+    left: -10%;
+  }
+  30% {
+    top: 13%;
+    left: -10%;
+  }
+  40% {
+    top: 14%;
+    left: -10%;
+  }
+  50% {
+    top: 15%;
+    left: -10%;
+  }
+  60% {
+    top: 14%;
+    left: -10%;
+  }
+  70% {
+    top: 13%;
+    left: -10%;
+  }
+  80% {
+    top: 12%;
+    left: -10%;
+  }
+  90% {
+    top: 11%;
+    left: -10%;
+  }
+  100% {
+    top: 10%;
+    left: -10%;
+  }
+}
+
+@-webkit-keyframes headerSDecorationMove {
+  0% {
+    top: 70%;
+    left: -21%;
+  }
+  10% {
+    top: 69%;
+    left: -21%;
+  }
+  20% {
+    top: 68%;
+    left: -21%;
+  }
+  30% {
+    top: 69%;
+    left: -21%;
+  }
+  40% {
+    top: 70%;
+    left: -21%;
+  }
+  50% {
+    top: 71%;
+    left: -21%;
+  }
+  60% {
+    top: 72%;
+    left: -21%;
+  }
+  70% {
+    top: 73%;
+    left: -21%;
+  }
+  80% {
+    top: 72%;
+    left: -21%;
+  }
+  90% {
+    top: 71%;
+    left: -21%;
+  }
+  100% {
+    top: 70%;
+    left: -21%;
+  }
+}
+
+@keyframes headerSDecorationMove {
+  0% {
+    top: 70%;
+    left: -21%;
+  }
+  10% {
+    top: 69%;
+    left: -21%;
+  }
+  20% {
+    top: 68%;
+    left: -21%;
+  }
+  30% {
+    top: 69%;
+    left: -21%;
+  }
+  40% {
+    top: 70%;
+    left: -21%;
+  }
+  50% {
+    top: 71%;
+    left: -21%;
+  }
+  60% {
+    top: 72%;
+    left: -21%;
+  }
+  70% {
+    top: 73%;
+    left: -21%;
+  }
+  80% {
+    top: 72%;
+    left: -21%;
+  }
+  90% {
+    top: 71%;
+    left: -21%;
+  }
+  100% {
+    top: 70%;
+    left: -21%;
+  }
+}
+
+@-webkit-keyframes headerDDecorationMove {
+  0% {
+    top: 70%;
+    left: 108%;
+  }
+  10% {
+    top: 69%;
+    left: 108%;
+  }
+  20% {
+    top: 68%;
+    left: 108%;
+  }
+  30% {
+    top: 69%;
+    left: 108%;
+  }
+  40% {
+    top: 70%;
+    left: 108%;
+  }
+  50% {
+    top: 71%;
+    left: 108%;
+  }
+  60% {
+    top: 72%;
+    left: 108%;
+  }
+  70% {
+    top: 73%;
+    left: 108%;
+  }
+  80% {
+    top: 72%;
+    left: 108%;
+  }
+  90% {
+    top: 71%;
+    left: 108%;
+  }
+  100% {
+    top: 70%;
+    left: 108%;
+  }
+}
+
+@keyframes headerDDecorationMove {
+  0% {
+    top: 70%;
+    left: 108%;
+  }
+  10% {
+    top: 69%;
+    left: 108%;
+  }
+  20% {
+    top: 68%;
+    left: 108%;
+  }
+  30% {
+    top: 69%;
+    left: 108%;
+  }
+  40% {
+    top: 70%;
+    left: 108%;
+  }
+  50% {
+    top: 71%;
+    left: 108%;
+  }
+  60% {
+    top: 72%;
+    left: 108%;
+  }
+  70% {
+    top: 73%;
+    left: 108%;
+  }
+  80% {
+    top: 72%;
+    left: 108%;
+  }
+  90% {
+    top: 71%;
+    left: 108%;
+  }
+  100% {
+    top: 70%;
+    left: 108%;
+  }
+}
+
+@-webkit-keyframes headerADecorationMove {
+  0% {
+    top: 160%;
+    left: 220%;
+  }
+  10% {
+    top: 159%;
+    left: 220%;
+  }
+  20% {
+    top: 158%;
+    left: 220%;
+  }
+  30% {
+    top: 159%;
+    left: 220%;
+  }
+  40% {
+    top: 160%;
+    left: 220%;
+  }
+  50% {
+    top: 161%;
+    left: 220%;
+  }
+  60% {
+    top: 162%;
+    left: 220%;
+  }
+  70% {
+    top: 163%;
+    left: 220%;
+  }
+  80% {
+    top: 162%;
+    left: 220%;
+  }
+  90% {
+    top: 161%;
+    left: 220%;
+  }
+  100% {
+    top: 160%;
+    left: 220%;
+  }
+}
+
+@keyframes headerADecorationMove {
+  0% {
+    top: 160%;
+    left: 220%;
+  }
+  10% {
+    top: 159%;
+    left: 220%;
+  }
+  20% {
+    top: 158%;
+    left: 220%;
+  }
+  30% {
+    top: 159%;
+    left: 220%;
+  }
+  40% {
+    top: 160%;
+    left: 220%;
+  }
+  50% {
+    top: 161%;
+    left: 220%;
+  }
+  60% {
+    top: 162%;
+    left: 220%;
+  }
+  70% {
+    top: 163%;
+    left: 220%;
+  }
+  80% {
+    top: 162%;
+    left: 220%;
+  }
+  90% {
+    top: 161%;
+    left: 220%;
+  }
+  100% {
+    top: 160%;
+    left: 220%;
+  }
+}
+
+@-webkit-keyframes headerQDecorationMove {
+  0% {
+    top: 15%;
+    left: -15%;
+  }
+  10% {
+    top: 14%;
+    left: -15%;
+  }
+  20% {
+    top: 13%;
+    left: -15%;
+  }
+  30% {
+    top: 14%;
+    left: -15%;
+  }
+  40% {
+    top: 15%;
+    left: -15%;
+  }
+  50% {
+    top: 16%;
+    left: -15%;
+  }
+  60% {
+    top: 17%;
+    left: -15%;
+  }
+  70% {
+    top: 18%;
+    left: -15%;
+  }
+  80% {
+    top: 17%;
+    left: -15%;
+  }
+  90% {
+    top: 16%;
+    left: -15%;
+  }
+  100% {
+    top: 15%;
+    left: -15%;
+  }
+}
+
+@keyframes headerQDecorationMove {
+  0% {
+    top: 15%;
+    left: -15%;
+  }
+  10% {
+    top: 14%;
+    left: -15%;
+  }
+  20% {
+    top: 13%;
+    left: -15%;
+  }
+  30% {
+    top: 14%;
+    left: -15%;
+  }
+  40% {
+    top: 15%;
+    left: -15%;
+  }
+  50% {
+    top: 16%;
+    left: -15%;
+  }
+  60% {
+    top: 17%;
+    left: -15%;
+  }
+  70% {
+    top: 18%;
+    left: -15%;
+  }
+  80% {
+    top: 17%;
+    left: -15%;
+  }
+  90% {
+    top: 16%;
+    left: -15%;
+  }
+  100% {
+    top: 15%;
+    left: -15%;
   }
 }
 /*# sourceMappingURL=main.css.map */
