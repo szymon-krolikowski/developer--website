@@ -555,6 +555,72 @@ html
 .question__itemHeader.active::after 
     content: "\2212"
 
+.about
+    padding: 10rem 2rem 5rem
+
+    &__secoundArticle
+        margin-top: 2rem
+
+    &__box
+        width: 80%
+        margin: 0 20% 2rem
+        padding: 2rem 0rem
+        border-bottom: 1px solid rgba(156, 156, 156, 0.2)
+        position: relative
+
+    &__box::after
+        content: ''
+        position: absolute
+        top: 0
+        left: -15%
+        border-left: 1px solid rgba(156, 156, 156, 0.2)
+        height: 115%
+
+
+    &__headingTwo
+        font-weight: 500
+        font-family: 'Mulish', sans-serif
+        width: 80%
+
+    &__headingThree
+        color: $yellow
+        text-transform: uppercase
+       
+    &__paragraph
+        color: $gray
+
+    &__paragraphStory
+        margin-top: 1rem
+        font-size: 1.5rem
+        line-height: 1.5
+        color: $gray
+
+    &__paragraphTitle
+        position: relative
+
+    &__paragraphTitle::before
+        content: ''
+        position: absolute
+        width: 20px
+        height: 20px
+        top: 10%
+        left: -18%
+        border-radius: 50%
+        background-color: $yellow
+        z-index: 1
+        box-shadow: 0px 0px 20px 0px #FDCE0C
+        
+    &__span
+        border-radius: 50px
+        background-color: rgba(253, 206, 12, 0.15)
+        padding: 0.5rem 2rem
+
+    &__spanColor
+        color: $yellow
+
+
+
+    
         
 @import "./_medium"
 @import "./_large"
