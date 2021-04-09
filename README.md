@@ -1,4 +1,4 @@
-# Website uX/UI Designer 
+# Website UX/UI Designer 
 
 The project presents a clear landing page for a UX/UI designer, with animated elements without and with user integration.
 
