@@ -10,7 +10,33 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <nav class="navigation">
+        <div class="navigation__wrapper">
+          <div class="navigation__menuButton">
+            <div class="navigation__menuButtonBurger"></div>
+          </div>
+          <p class="navigation__heading headingOne"></p>
+          <div class="navigation__navigation">
+            <ul class="navigation__unorderList">
+              <li><a class="navigation__link paragraph" href="#home">Strona główna</a></li>
+              <li><a class="navigation__link paragraph" href="#uslugi">Usługi</a></li>
+              <li><a class="navigation__link paragraph" href="#o-mnie">O mnie</a></li>
+              <li><a class="navigation__link paragraph" href="#kontakt">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  
+    <section class="navigationMobile">
+        <ul class="navigationMobile__unorderList">
+          <li class="navigationMobile__elementList"><a class="navigationMobile__link" href="#home">Strona główna</a></li>
+          <li class="navigationMobile__elementList"><a class="navigationMobile__link" href="#uslugi">Usługi</a></li>
+          <li class="navigationMobile__elementList"><a class="navigationMobile__link" href="#o-mnie">O mnie</a></li>
+          <li class="navigationMobile__elementList"><a class="navigationMobile__link" href="#kontakt">Kontakt</a></li>
+        </ul>
+    </section>
+
+    <div id="home" class="wrapper">
         <div class="header__wrapper">
             <section class="header">
                 <article class="header__firstArticle">
@@ -30,7 +56,7 @@
                 <img class="header__decorationFive" src="image/headerFive--decoration.png" class="Decoration image">
             </section>
         </div>
-        <section class="offer">
+        <section id="uslugi" class="offer">
             <img class="offer__patternsPlus" src="image/patterns--decoration.png" alt="Website decoration">
             <img class="offer__decorationPlus" src="image/plus--decoration.png" alt="Website decoration">
             <h3 class="headingThree offer__headingThree"><span class="offer__span">Usługi</span></h3>
@@ -158,7 +184,7 @@
                 </article>
             </section>
         </div>
-        <section class="about">
+        <section id="o-mnie" class="about">
             <article class="about__firstArticle">
                 <h3 class="headingThree about__headingThree"><span class="about__span">Moja historia</span></h3>
                 <h2 class="headingTwo about__headingTwo">Moja ścieżka kariery i podróż zawodowa</h2>
@@ -397,8 +423,8 @@
                 <p class="paragraph contact__paragraph">Jeśli mieszkasz w pobliżu, odwiedź mnie i mój zespół w naszym biurze.</p>
                 <div class="contact__office">
                     <p class="paragraph"><span class="contact__icon"> <img src="svg/pin.svg" alt="Location icon"> </span>ul. Szeroka 32, Toruń</p>
-                    <p class="paragraph"><span class="contact__icon"> <img src="svg/call.svg" alt="Phone icon"> </span>600 600 600</p>
-                    <p class="paragraph"><span class="contact__icon"> <img src="svg/mail.svg" alt="Mail icon"> </span>officestudio@gmail.com</p>
+                    <p class="paragraph"><span class="contact__icon"> <img src="svg/call.svg" alt="Phone icon"> </span><a class="contact__link" href="tel:+48600600600">600 600 600</a></p>
+                    <p class="paragraph"><span class="contact__icon"> <img src="svg/mail.svg" alt="Mail icon"> </span><a class="contact__link" href="mailto:officestudio@gmail.com">officestudio@gmail.com</a></p>
                 </div>
             </article>
             <article class="contact__secoundArticle">
@@ -410,6 +436,7 @@
         <p class="paragraph">Strona stworzna przez OlimpCode</p>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
 
 </html>
