@@ -1,4 +1,52 @@
 @media screen and ( min-width: 1025px )
+    .navigation
+        background-color: transparent
+        box-shadow: none
+        height: 8vh
+        transition: all 0.5s
+
+        &__navigation
+            display: flex
+        
+        &__wrapper
+            display: flex
+            justify-content: space-between
+
+        &__menuButton
+            display: none
+
+        &__heading
+            padding-left: 0px
+            font-size: 3rem
+
+        &__unorderList
+            list-style: none
+            display: flex   
+
+        &__link
+            position: relative
+            font-weight: 400
+            text-decoration: none
+            color: #000
+            transition: color 0.3s
+            margin: 0px 0px 0px 40px
+
+        &__link::before
+            content: ""
+            position: absolute
+            top: 110%
+            width: 0%
+            height: 3px
+            background-color: #000
+            transition: width 0.5s
+
+        &__link:hover::before
+            width: 100%
+
+    .navigation__scroll
+        background-color: #fff
+        box-shadow: 0px 2px 20px 0px rgba(156,156,156, 0.3)
+
     .header
         position: relative
         max-width: 1300px

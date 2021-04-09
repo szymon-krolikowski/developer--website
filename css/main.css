@@ -88,6 +88,152 @@ html {
   overflow: hidden;
 }
 
+.navigation {
+  width: 100vw;
+  height: 7vh;
+  position: fixed;
+  top: 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(156, 156, 156, 0.3);
+          box-shadow: 0px 2px 20px 0px rgba(156, 156, 156, 0.3);
+  padding: 20px 20px;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.navigation__navigation {
+  display: none;
+}
+
+.navigation__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.navigation__heading {
+  font-family: 'Pacifico', cursive;
+  padding-left: 30px;
+}
+
+.navigation__menuButton {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.navigation__menuButtonBurger {
+  width: 50px;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.navigation__menuButtonBurger::before, .navigation__menuButtonBurger::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.navigation__menuButtonBurger::before {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.navigation__menuButtonBurger::after {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.navigation__menuButton.activeMobileNavigation .navigation__menuButtonBurger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navigation__menuButton.activeMobileNavigation .navigation__menuButtonBurger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+.navigation__menuButton.activeMobileNavigation .navigation__menuButtonBurger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.navigationMobile {
+  width: 80vw;
+  margin-top: 7vh;
+  height: 100vh;
+  position: fixed;
+  left: -80vw;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(156, 156, 156, 0.3);
+          box-shadow: 0px 2px 20px 0px rgba(156, 156, 156, 0.3);
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.navigationMobile__elementList {
+  color: #9C9C9C;
+  font-size: 2rem;
+  padding: 20px 20px;
+  margin: 10px 0px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.navigationMobile__elementList:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.navigationMobile__link {
+  text-decoration: none;
+  color: #000;
+}
+
 .header {
   width: 100vw;
   height: 100%;
@@ -1008,6 +1154,17 @@ html {
   padding-right: 3rem;
 }
 
+.contact__link {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+}
+
+.contact__link:hover {
+  color: #FDCE0C;
+}
+
 .footer {
   padding: 2rem 2rem;
   width: 100%;
@@ -1017,6 +1174,27 @@ html {
 }
 
 @media screen and (min-width: 767px) {
+  .navigation__heading {
+    font-size: 3rem;
+  }
+  .navigationMobile {
+    width: 50vw;
+    margin-top: 10vh;
+    height: 100vh;
+    position: fixed;
+    left: -80vw;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(156, 156, 156, 0.3);
+            box-shadow: 0px 2px 20px 0px rgba(156, 156, 156, 0.3);
+    z-index: 100;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+  .navigationMobile__bigCircleDecoration {
+    width: 450px;
+    height: 450px;
+  }
   .header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1180,6 +1358,67 @@ html {
 }
 
 @media screen and (min-width: 1025px) {
+  .navigation {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    height: 8vh;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .navigation__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navigation__menuButton {
+    display: none;
+  }
+  .navigation__heading {
+    padding-left: 0px;
+    font-size: 3rem;
+  }
+  .navigation__unorderList {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation__link {
+    position: relative;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    margin: 0px 0px 0px 40px;
+  }
+  .navigation__link::before {
+    content: "";
+    position: absolute;
+    top: 110%;
+    width: 0%;
+    height: 3px;
+    background-color: #000;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  .navigation__link:hover::before {
+    width: 100%;
+  }
+  .navigation__scroll {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(156, 156, 156, 0.3);
+            box-shadow: 0px 2px 20px 0px rgba(156, 156, 156, 0.3);
+  }
   .header {
     position: relative;
     max-width: 1300px;
